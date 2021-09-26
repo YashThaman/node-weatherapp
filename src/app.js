@@ -79,7 +79,7 @@ app.get('/weather',(req, res)=>{
 app.get('/products',(req, res)=>{  
     if(!req.query.search){
         return res.send({                   // it stops when condition is true preventing to two request to be used as it is allowed in http
-            error: "You should provide correct search term"
+            error: "You should provide correct search term."
         })
     }
 
